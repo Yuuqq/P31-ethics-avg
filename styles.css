@@ -1,0 +1,10 @@
+:root{--bg:#f7f4ff;--card:#fff;--line:#ddd2f2;--ink:#2a2142}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:"Source Sans 3","Noto Sans SC",sans-serif;background:var(--bg)}
+.app{max-width:900px;margin:0 auto;padding:16px}
+.hero,.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.hero h1{margin:0 0 8px}
+.choices{display:grid;gap:8px;margin:10px 0}
+button{border:0;border-radius:10px;padding:10px 12px;color:#fff;cursor:pointer;background:linear-gradient(135deg,#745fd0,#5039ad);font:inherit;text-align:left}
+#restartBtn{border-radius:999px;padding:8px 14px;text-align:center}
+
