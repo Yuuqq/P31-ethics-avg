@@ -8,6 +8,7 @@
   <meta name="color-scheme" content="light dark">
   <title>P31 电车难题新闻干预与记录AVG</title>
     <link rel="stylesheet" href="../shared/design-tokens.css" />
+<link rel="stylesheet" href="https://yuuqq.github.io/shared/design-tokens.css" />
 <link rel="stylesheet" href="./styles.css" />
   <meta name="description" content="电车难题新闻干预与记录 AVG。P31 电车难题新闻干预与记录AVG" />
   <meta property="og:title" content="P31 电车难题新闻伦理 AVG" />
@@ -32,7 +33,7 @@ a[href]::after{content:" (" attr(href) ")";font-size:9pt;color:#666}
       <p>在新闻伦理分支剧情中做选择，查看不同结局。</p>
     </header>
 
-    <section class="card"><details class="teach-card" open><summary>🎓 新闻伦理与编辑决策</summary><p>新闻伦理涉及真实性、公正性、独立性、最小伤害等原则。本工具通过分支叙事模拟新闻编辑室的日常决策，每个选择都影响伦理得分，帮助学生体验新闻工作中的伦理困境。</p></details></section>
+    <section class="card"><details class="teach-card"><summary>🎓 新闻伦理与编辑决策</summary><p>新闻伦理涉及真实性、公正性、独立性、最小伤害等原则。本工具通过分支叙事模拟新闻编辑室的日常决策，每个选择都影响伦理得分，帮助学生体验新闻工作中的伦理困境。</p></details></section>
 
     <section class="card">
       <h2 id="title"></h2>
@@ -60,7 +61,21 @@ a[href]::after{content:" (" attr(href) ")";font-size:9pt;color:#666}
     <a href="https://yuuqq.github.io/journalism-toolbox/" style="text-decoration:none;">📋 工具箱导航</a>
     <span style="opacity:.4">P31</span>
   </nav>
-  <script src="../shared/releases/v2.6/loader.js" data-modules="dark,kbd,cmd,toast,onboarding,pedagogy-p1,pedagogy-p2,nav"></script>
+  <script>
+(function () {
+  var modules = "dark,kbd,cmd,toast,onboarding,pedagogy-p1,pedagogy-p2,nav";
+  var s = document.createElement("script");
+  s.src = "../shared/releases/v2.6/loader.js";
+  s.setAttribute("data-modules", modules);
+  s.onerror = function () {
+    var t = document.createElement("script");
+    t.src = "https://yuuqq.github.io/shared/releases/v2.6/loader.js";
+    t.setAttribute("data-modules", modules);
+    document.body.appendChild(t);
+  };
+  document.body.appendChild(s);
+})();
+</script>
   <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{})}</script>
 
 </body>
