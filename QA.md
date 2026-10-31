@@ -38,6 +38,14 @@
 - **Severity**: N/A
 - **Workaround**: N/A
 
+## Hallmark restyle（2026-10-31）
+
+- 外壳改为羊皮纸/朱砂：`design-tokens.css` → `modern-styles.css` → `tool-chrome.css` → `./styles.css`
+- 顶栏 wordmark「新闻实验工具」+ `P31`；底栏附录 A 数据边界；工具箱链接仅为 `../P00-dashboard/`
+- 「如何使用」单层 `details`，默认闭合；去掉套卡、emoji 壳、`transition: all` 与打印用的纯黑纯白
+- 剧情节点、分支与结局文案未改；`loader.js` 仍加载
+- 未改 `../shared/`
+
 ## Sign-Off
 
 - **QA Sub-Agent**: Approved
